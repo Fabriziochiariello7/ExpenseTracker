@@ -17,7 +17,7 @@ class HomeVC: UIViewController {
     
     // MARK: - HeaderView Item's
     
-    private let welcomeLabel    = CustomLabel(textAlignment: .left, fontSize: 20, textWeight: .ultraLight, text: "Hi Welcome")
+    private let welcomeLabel    = CustomLabel(textAlignment: .left, fontSize: 20, textWeight: .ultraLight, text: " Welcome")
     private let fullnameLabel           = CustomLabel(textAlignment: .left, fontSize: 18, textWeight: .regular)
     
     
@@ -38,7 +38,7 @@ class HomeVC: UIViewController {
     
    
     
-    private let incomelbl   = CustomLabel(textAlignment: .left, fontSize: 13, textWeight: .light, text: "Income")
+//    private let incomelbl   = CustomLabel(textAlignment: .left, fontSize: 13, textWeight: .light, text: "Income")
     private let expenseslbl   = CustomLabel(textAlignment: .left, fontSize: 13, textWeight: .light, text: "Expenses")
     private let lastIncome  = CustomLabel(textAlignment: .left, fontSize: CGFloat(DeviceTypes.isiPhoneSE || DeviceTypes.isiPhone8Zoomed ? 14 : 20))
     private let lastExpense = CustomLabel(textAlignment: .left, fontSize: CGFloat(DeviceTypes.isiPhoneSE || DeviceTypes.isiPhone8Zoomed ? 14 : 18))
@@ -122,10 +122,12 @@ class HomeVC: UIViewController {
       
         
         
-        balanceInfo.addSubViews(totalBalanceLabel, balanceNumber, incomelbl, lastIncome, expenseslbl, lastExpense)
+        balanceInfo.addSubViews(totalBalanceLabel, balanceNumber,
+//                                incomelbl,
+                                lastIncome, expenseslbl, lastExpense)
         
         lastIncome.textColor    = .white
-        incomelbl.textColor     = .white
+//        incomelbl.textColor     = .white
         
         
         expenseslbl.textColor   = .white

@@ -77,7 +77,7 @@ class TransectionsVC: UIViewController, ChartViewDelegate {
         configTransectionsVC()
         configSegment()
         configTrasactionStateView()
-        configTransactionLabel()
+//        configTransactionLabel()
         tableView.dataSource = self
         tableView.delegate = self
         
@@ -88,7 +88,9 @@ class TransectionsVC: UIViewController, ChartViewDelegate {
         scrollView.addSubview(contentView)
         scrollView.pinToEdges(to: view)
         contentView.pinToEdges(to: scrollView)
-        contentView.addSubViews(segment, chartView, transectionsLabel, transactionStateView)
+        contentView.addSubViews(segment, chartView,
+//                                transectionsLabel,
+                                 transactionStateView)
         
         let contentView_height = CGFloat(DeviceTypes.isiPhoneSE || DeviceTypes.isiPhone8Zoomed ? 600 : 800)
         
@@ -136,21 +138,21 @@ class TransectionsVC: UIViewController, ChartViewDelegate {
         ])
     }
     
-    private func configTransactionLabel() {
-        NSLayoutConstraint.activate([
-            transectionsLabel.topAnchor.constraint(equalTo: chartView.bottomAnchor, constant: 30),
-            transectionsLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
-            transectionsLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
-            transectionsLabel.heightAnchor.constraint(equalToConstant: 26),
-        ])
-    }
+//    private func configTransactionLabel() {
+//        NSLayoutConstraint.activate([
+//            transectionsLabel.topAnchor.constraint(equalTo: chartView.bottomAnchor, constant: 30),
+//            transectionsLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
+//            transectionsLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
+//            transectionsLabel.heightAnchor.constraint(equalToConstant: 26),
+//        ])
+//    }
     
     private func configTrasactionStateView() {
         transactionStateView.addSubViews(tableView, messageLabel)
         transactionStateView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            transactionStateView.topAnchor.constraint(equalTo: transectionsLabel.bottomAnchor, constant: 10),
+//            transactionStateView.topAnchor.constraint(equalTo: transectionsLabel.bottomAnchor, constant: 10),
             transactionStateView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             transactionStateView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             transactionStateView.bottomAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.bottomAnchor)

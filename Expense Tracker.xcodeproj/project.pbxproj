@@ -55,6 +55,7 @@
 		10EEDF9027CD05AD00BC03D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10EEDF8F27CD05AD00BC03D3 /* Assets.xcassets */; };
 		10EEDF9327CD05AD00BC03D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10EEDF9127CD05AD00BC03D3 /* LaunchScreen.storyboard */; };
 		10F3E167282C3DED0071942B /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F3E166282C3DED0071942B /* Color+Ext.swift */; };
+		6945B6E629D1E93200A073C9 /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6945B6E529D1E93200A073C9 /* AvatarImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +108,7 @@
 		10EEDF9227CD05AD00BC03D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10EEDF9427CD05AD00BC03D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10F3E166282C3DED0071942B /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		6945B6E529D1E93200A073C9 /* AvatarImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				10EEDF8A27CD05AD00BC03D3 /* HomeVC.swift */,
+				6945B6E529D1E93200A073C9 /* AvatarImageView.swift */,
 				10C5B3C427D0E0B600B60A4A /* AddIncomeAndExpensesVC.swift */,
 				10C5B3C927D0E20000B60A4A /* TransectionsVC.swift */,
 				10A8872B27F0B4AA0001794B /* ProfileVC.swift */,
@@ -449,6 +452,7 @@
 				1065E9F428A6953C00EA17E9 /* AlertBtn.swift in Sources */,
 				102CDF2E293A862E0054B973 /* OnboardingViewController.swift in Sources */,
 				101EA9D327E1253600E9534C /* CustomView.swift in Sources */,
+				6945B6E629D1E93200A073C9 /* AvatarImageView.swift in Sources */,
 				102CDF33293A87D70054B973 /* CustomPageController.swift in Sources */,
 				103B9FB628748C49004A91A5 /* CustomTableView.swift in Sources */,
 				102CDF3D293A87E40054B973 /* ColorUtils.swift in Sources */,
