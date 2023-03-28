@@ -56,6 +56,9 @@
 		10EEDF9327CD05AD00BC03D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10EEDF9127CD05AD00BC03D3 /* LaunchScreen.storyboard */; };
 		10F3E167282C3DED0071942B /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F3E166282C3DED0071942B /* Color+Ext.swift */; };
 		6945B6E629D1E93200A073C9 /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6945B6E529D1E93200A073C9 /* AvatarImageView.swift */; };
+		69EEDE0629D325B80083F297 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EEDE0529D325B80083F297 /* ContentView.swift */; };
+		69EEDE0829D327DE0083F297 /* WelcomeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EEDE0729D327DE0083F297 /* WelcomeTextView.swift */; };
+		69EEDE0A29D327FF0083F297 /* RoundedRectangleBalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EEDE0929D327FF0083F297 /* RoundedRectangleBalanceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +112,9 @@
 		10EEDF9427CD05AD00BC03D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10F3E166282C3DED0071942B /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		6945B6E529D1E93200A073C9 /* AvatarImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
+		69EEDE0529D325B80083F297 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		69EEDE0729D327DE0083F297 /* WelcomeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeTextView.swift; sourceTree = "<group>"; };
+		69EEDE0929D327FF0083F297 /* RoundedRectangleBalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleBalanceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +256,7 @@
 		10EEDF7A27CD05AD00BC03D3 = {
 			isa = PBXGroup;
 			children = (
+				69EEDE0429D325890083F297 /* Expense Tracker SwiftUI */,
 				10EEDF8527CD05AD00BC03D3 /* Expense Tracker */,
 				10EEDF8427CD05AD00BC03D3 /* Products */,
 			);
@@ -337,6 +344,16 @@
 				109FF576284DE0A60060CD64 /* BalanceFormatter.swift */,
 			);
 			path = Utilits;
+			sourceTree = "<group>";
+		};
+		69EEDE0429D325890083F297 /* Expense Tracker SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				69EEDE0529D325B80083F297 /* ContentView.swift */,
+				69EEDE0929D327FF0083F297 /* RoundedRectangleBalanceView.swift */,
+				69EEDE0729D327DE0083F297 /* WelcomeTextView.swift */,
+			);
+			path = "Expense Tracker SwiftUI";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,6 +458,7 @@
 				10C5B3A727CDF13100B60A4A /* Constants.swift in Sources */,
 				10C5B3CA27D0E20000B60A4A /* TransectionsVC.swift in Sources */,
 				1065E9F728A6953C00EA17E9 /* AlertBody.swift in Sources */,
+				69EEDE0A29D327FF0083F297 /* RoundedRectangleBalanceView.swift in Sources */,
 				10A8870A27EF5D060001794B /* DatePicker.swift in Sources */,
 				109FF577284DE0A60060CD64 /* BalanceFormatter.swift in Sources */,
 				10A8870827E86A6C0001794B /* UITextFeild+Ext.swift in Sources */,
@@ -450,12 +468,14 @@
 				1065E9F828A6953C00EA17E9 /* AlertController.swift in Sources */,
 				10C5B3AC27CDFADB00B60A4A /* TabBarVC.swift in Sources */,
 				1065E9F428A6953C00EA17E9 /* AlertBtn.swift in Sources */,
+				69EEDE0829D327DE0083F297 /* WelcomeTextView.swift in Sources */,
 				102CDF2E293A862E0054B973 /* OnboardingViewController.swift in Sources */,
 				101EA9D327E1253600E9534C /* CustomView.swift in Sources */,
 				6945B6E629D1E93200A073C9 /* AvatarImageView.swift in Sources */,
 				102CDF33293A87D70054B973 /* CustomPageController.swift in Sources */,
 				103B9FB628748C49004A91A5 /* CustomTableView.swift in Sources */,
 				102CDF3D293A87E40054B973 /* ColorUtils.swift in Sources */,
+				69EEDE0629D325B80083F297 /* ContentView.swift in Sources */,
 				10F3E167282C3DED0071942B /* Color+Ext.swift in Sources */,
 				10EEDF8927CD05AD00BC03D3 /* SceneDelegate.swift in Sources */,
 				1065E9F628A6953C00EA17E9 /* AlertContainer.swift in Sources */,
