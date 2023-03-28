@@ -10,13 +10,8 @@ import SwiftUI
 struct RoundedRectangleBalanceView: View {
     var body: some View {
         
-        ZStack{
-            RoundedRectangle(cornerRadius: 20)
-                .background([Color.yellow, Color.red, Color.yellow])
-                .frame(width: 325, height: 225)
-            
-            
-        }
+        RoundedRectangleView()
+            .padding(.bottom, 200)
     }
 }
 

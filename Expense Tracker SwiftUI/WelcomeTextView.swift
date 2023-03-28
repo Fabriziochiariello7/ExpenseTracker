@@ -11,8 +11,7 @@ struct WelcomeTextView: View {
     var body: some View {
         Text("Welcome")
             .fontWeight(.light)
-            .padding(.leading, 275)
-            .padding(.bottom, 600)
+            
     }
 }
 

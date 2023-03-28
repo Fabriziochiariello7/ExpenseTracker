@@ -146,24 +146,16 @@ class HomeVC: UIViewController {
             welcomeLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             
             welcomeLabel.heightAnchor.constraint(equalToConstant: 22),
-            
-            
             fullnameLabel.trailingAnchor.constraint(equalTo: headerView.trailingAnchor, constant: -20),
             fullnameLabel.heightAnchor.constraint(equalToConstant: 26),
-            
-            
-           
-            
             balanceInfo.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: 20),
             balanceInfo.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             balanceInfo.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             balanceInfo.heightAnchor.constraint(equalToConstant: 230),
-            
             totalBalanceLabel.topAnchor.constraint(equalTo: balanceInfo.topAnchor, constant: 30),
             totalBalanceLabel.trailingAnchor.constraint(equalTo: balanceInfo.trailingAnchor),
             totalBalanceLabel.leadingAnchor.constraint(equalTo: balanceInfo.leadingAnchor),
             totalBalanceLabel.heightAnchor.constraint(equalToConstant: 24),
-            
             balanceNumber.topAnchor.constraint(equalTo: totalBalanceLabel.bottomAnchor, constant: 10),
             balanceNumber.trailingAnchor.constraint(equalTo: balanceInfo.trailingAnchor),
             balanceNumber.leadingAnchor.constraint(equalTo: balanceInfo.leadingAnchor),

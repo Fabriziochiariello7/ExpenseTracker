@@ -56,6 +56,9 @@
 		10EEDF9327CD05AD00BC03D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10EEDF9127CD05AD00BC03D3 /* LaunchScreen.storyboard */; };
 		10F3E167282C3DED0071942B /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F3E166282C3DED0071942B /* Color+Ext.swift */; };
 		6945B6E629D1E93200A073C9 /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6945B6E529D1E93200A073C9 /* AvatarImageView.swift */; };
+		699652CD29D32CEC002E640A /* RoundedRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699652CC29D32CEC002E640A /* RoundedRectangleView.swift */; };
+		699652CF29D3321C002E640A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699652CE29D3321C002E640A /* MainView.swift */; };
+		699652D129D33818002E640A /* AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699652D029D33818002E640A /* AddExpenseView.swift */; };
 		69EEDE0629D325B80083F297 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EEDE0529D325B80083F297 /* ContentView.swift */; };
 		69EEDE0829D327DE0083F297 /* WelcomeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EEDE0729D327DE0083F297 /* WelcomeTextView.swift */; };
 		69EEDE0A29D327FF0083F297 /* RoundedRectangleBalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EEDE0929D327FF0083F297 /* RoundedRectangleBalanceView.swift */; };
@@ -112,6 +115,9 @@
 		10EEDF9427CD05AD00BC03D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10F3E166282C3DED0071942B /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		6945B6E529D1E93200A073C9 /* AvatarImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
+		699652CC29D32CEC002E640A /* RoundedRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleView.swift; sourceTree = "<group>"; };
+		699652CE29D3321C002E640A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		699652D029D33818002E640A /* AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseView.swift; sourceTree = "<group>"; };
 		69EEDE0529D325B80083F297 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		69EEDE0729D327DE0083F297 /* WelcomeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeTextView.swift; sourceTree = "<group>"; };
 		69EEDE0929D327FF0083F297 /* RoundedRectangleBalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleBalanceView.swift; sourceTree = "<group>"; };
@@ -256,6 +262,7 @@
 		10EEDF7A27CD05AD00BC03D3 = {
 			isa = PBXGroup;
 			children = (
+				10EEDF8F27CD05AD00BC03D3 /* Assets.xcassets */,
 				69EEDE0429D325890083F297 /* Expense Tracker SwiftUI */,
 				10EEDF8527CD05AD00BC03D3 /* Expense Tracker */,
 				10EEDF8427CD05AD00BC03D3 /* Products */,
@@ -279,7 +286,6 @@
 				10EEDFA027CD09E700BC03D3 /* Models */,
 				10EEDF9D27CD099E00BC03D3 /* Custom Views */,
 				10C5B3A827CDF9AD00B60A4A /* Controllers */,
-				10EEDF8F27CD05AD00BC03D3 /* Assets.xcassets */,
 				10EEDF9127CD05AD00BC03D3 /* LaunchScreen.storyboard */,
 				10EEDF9427CD05AD00BC03D3 /* Info.plist */,
 			);
@@ -350,7 +356,10 @@
 			isa = PBXGroup;
 			children = (
 				69EEDE0529D325B80083F297 /* ContentView.swift */,
+				699652CE29D3321C002E640A /* MainView.swift */,
+				699652D029D33818002E640A /* AddExpenseView.swift */,
 				69EEDE0929D327FF0083F297 /* RoundedRectangleBalanceView.swift */,
+				699652CC29D32CEC002E640A /* RoundedRectangleView.swift */,
 				69EEDE0729D327DE0083F297 /* WelcomeTextView.swift */,
 			);
 			path = "Expense Tracker SwiftUI";
@@ -446,8 +455,10 @@
 				106531492815AC03009FD888 /* Transection.swift in Sources */,
 				1008990B27D8C2E600A94B4F /* HeaderVC.swift in Sources */,
 				1082FE0D28058E3300538FFE /* ProfileHeaderView.swift in Sources */,
+				699652CF29D3321C002E640A /* MainView.swift in Sources */,
 				101EA9D527E250DA00E9534C /* GradientButton.swift in Sources */,
 				1065314B2815B137009FD888 /* TransectionTableViewCell.swift in Sources */,
+				699652CD29D32CEC002E640A /* RoundedRectangleView.swift in Sources */,
 				1065E9F528A6953C00EA17E9 /* AlertTitle.swift in Sources */,
 				10C5B3A527CDF09500B60A4A /* AppError.swift in Sources */,
 				102CDF42293A95860054B973 /* OnboardingCell.swift in Sources */,
@@ -464,6 +475,7 @@
 				10A8870827E86A6C0001794B /* UITextFeild+Ext.swift in Sources */,
 				10C5B3A327CDEEDD00B60A4A /* User.swift in Sources */,
 				10C5B3CE27D3C30600B60A4A /* CustomTextFields.swift in Sources */,
+				699652D129D33818002E640A /* AddExpenseView.swift in Sources */,
 				10C5B3C527D0E0B600B60A4A /* AddIncomeAndExpensesVC.swift in Sources */,
 				1065E9F828A6953C00EA17E9 /* AlertController.swift in Sources */,
 				10C5B3AC27CDFADB00B60A4A /* TabBarVC.swift in Sources */,
