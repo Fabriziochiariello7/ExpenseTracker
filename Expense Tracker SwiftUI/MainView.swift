@@ -9,13 +9,16 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        VStack {
+        VStack(spacing: -190.0) {
             WelcomeTextView()
                 .padding(.leading, 275)
                 Spacer()
             
             RoundedRectangleBalanceView()
+            
+            TransactionsTextView()
             Spacer()
+            
         }
     }
 }

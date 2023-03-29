@@ -17,21 +17,30 @@ struct AddExpenseView: View {
     
     var body: some View {
         
-        
         VStack {
             Spacer()
             Text("**Enter your expense!**")
                 .font(.title)
             Spacer()
-            Picker("Expense", selection: $expenseSelection){
-                ForEach(selection, id: \.self) { selection in
-                    Text("\(selection)")
+            
+            ZStack{
+                Color.blue
+                VStack{
+                    Picker("Expense", selection: $expenseSelection){
+                        ForEach(selection, id: \.self) { selection in
+                            Text("\(selection)")
+                                
+                        }
+                    }.accentColor(.white)
+                    
                 }
-            }
+                
+            }.frame(width: 200, height: 50)
+            
+                .cornerRadius(20)
             TextField("Enter Title...", text: $selectedTitle)
                 .padding()
             TextField("Enter Description...", text: $selectedDescription)
-                .frame( height: 40)
                 .padding()
             DatePicker("Select date..", selection: $selectedDate)
                 .padding()

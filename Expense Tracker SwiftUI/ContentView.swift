@@ -35,6 +35,11 @@ struct TabBar: View {
                     Image(selected == 1 ? "Charts" : "Charts2")
                 }
                 .tag(1)
+            TotalExpenseView()
+                .tabItem{
+                    Image(selected == 2 ? "PieChart2" : "PieChart")
+                }
+                .tag(2)
         }
     }
 }
